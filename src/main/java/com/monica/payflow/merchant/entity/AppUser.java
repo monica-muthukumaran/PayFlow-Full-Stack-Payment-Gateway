@@ -2,7 +2,9 @@ package com.monica.payflow.merchant.entity;
 
 import com.monica.payflow.common.enums.UserRole;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.UUID;
@@ -10,6 +12,8 @@ import java.util.UUID;
 @Entity
 @Table(name = "app_user")
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Setter
 public class AppUser {
 

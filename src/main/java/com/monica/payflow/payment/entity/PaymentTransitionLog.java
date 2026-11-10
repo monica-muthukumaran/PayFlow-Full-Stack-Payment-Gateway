@@ -4,12 +4,20 @@ import com.monica.payflow.common.enums.PaymentActor;
 import com.monica.payflow.common.enums.PaymentEvent;
 import com.monica.payflow.common.enums.PaymentStatus;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
 @Table(name = "payment_transition_log")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class PaymentTransitionLog {
 
     @Id
